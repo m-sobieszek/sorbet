@@ -868,6 +868,8 @@ DispatchResult dispatchCallSymbol(const GlobalState &gs, const DispatchArgs &arg
                                 data->name.show(gs), args.thisType.show(gs), prettyArity(gs, method), posArgs);
                 }
                 e.addErrorLine(method.data(gs)->loc(), "`{}` defined here", data->show(gs));
+                e.addErrorSection(ErrorSection("Got " + args.fullType.type.show(gs) + " originating from:",
+                                               args.fullType.origins2Explanations(gs, args.originForUninitialized)));
                 if (args.name == core::Names::any() &&
                     symbol == core::Symbols::T().data(gs)->lookupSingletonClass(gs)) {
                     e.addErrorNote("If you want to allow any type as an argument, use `{}`", "T.untyped");
