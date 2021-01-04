@@ -3703,7 +3703,7 @@ ClassDef{
                   }
                   fun = <U foreign_>
                   block = nullptr
-                  pos_args = 2
+                  pos_args = 0
                   args = [
                     Literal{ value = :allow_direct_mutation }
                     UnresolvedIdent{
@@ -4145,7 +4145,7 @@ ClassDef{
                   }
                   fun = <U foreign_lazy_>
                   block = nullptr
-                  pos_args = 2
+                  pos_args = 0
                   args = [
                     Literal{ value = :allow_direct_mutation }
                     UnresolvedIdent{
@@ -4587,7 +4587,7 @@ ClassDef{
                   }
                   fun = <U foreign_proc_>
                   block = nullptr
-                  pos_args = 2
+                  pos_args = 0
                   args = [
                     Literal{ value = :allow_direct_mutation }
                     UnresolvedIdent{
@@ -5032,7 +5032,7 @@ ClassDef{
                   }
                   fun = <U foreign_invalid_>
                   block = nullptr
-                  pos_args = 2
+                  pos_args = 0
                   args = [
                     Literal{ value = :allow_direct_mutation }
                     UnresolvedIdent{
