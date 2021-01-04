@@ -78,13 +78,7 @@ public:
 
     static TreePtr Send5(core::LocOffsets loc, TreePtr recv, core::NameRef fun, TreePtr arg1, TreePtr arg2,
                          TreePtr arg3, TreePtr arg4, TreePtr arg5) {
-        Send::ARGS_store nargs;
-        nargs.emplace_back(std::move(arg1));
-        nargs.emplace_back(std::move(arg2));
-        nargs.emplace_back(std::move(arg3));
-        nargs.emplace_back(std::move(arg4));
-        nargs.emplace_back(std::move(arg5));
-        return Send(loc, std::move(recv), fun, 5, std::move(nargs));
+        return Send(loc, std::move(recv), fun, 5, SendArgs(std::move(arg1), std::move(arg2), std::move(arg3), std::move(arg4), std::move(arg5)));
     }
 
     static TreePtr Literal(core::LocOffsets loc, const core::TypePtr &tpe) {
