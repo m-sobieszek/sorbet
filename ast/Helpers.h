@@ -34,6 +34,13 @@ public:
         return store;
     }
 
+    static TreePtr Block2(core::LocOffsets loc, TreePtr body, TreePtr arg1, TreePtr arg2) {
+        MethodDef::ARGS_store args;
+        args.emplace_back(std::move(arg1));
+        args.emplace_back(std::move(arg2));
+        return Block(loc, std::move(body), std::move(args));
+    }
+
     static TreePtr Send(core::LocOffsets loc, TreePtr recv, core::NameRef fun, u2 numPosArgs, Send::ARGS_store args,
                         Send::Flags flags = {}, TreePtr blk = nullptr) {
         auto send = make_tree<ast::Send>(loc, std::move(recv), fun, numPosArgs, std::move(args), std::move(blk), flags);
