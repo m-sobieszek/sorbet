@@ -282,13 +282,13 @@ void buildForeignAccessors(core::MutableContext ctx, PropInfo &ret, vector<ast::
 
     ast::TreePtr type;
     ast::TreePtr nonNilType;
-    if (ASTUtil::dupType(ret.foreign) == nullptr) {
+    if (ASTUtil::dupType(ret.type) == nullptr) {
         // If it's not a valid type, just use untyped
         type = ast::MK::Untyped(loc);
         nonNilType = ast::MK::Untyped(loc);
     } else {
-        type = ast::MK::Nilable(loc, ASTUtil::dupType(ret.foreign));
-        nonNilType = ASTUtil::dupType(ret.foreign);
+        type = ast::MK::Nilable(loc, ASTUtil::dupType(ret.type));
+        nonNilType = ASTUtil::dupType(ret.type);
     }
 
     // sig {params(opts: T.untyped).returns(T.nilable($foreign))}
