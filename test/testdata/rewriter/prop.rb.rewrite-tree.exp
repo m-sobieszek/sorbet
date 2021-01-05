@@ -671,7 +671,7 @@ class <emptyTree><<C <root>>> < (::<todo sym>)
           else
             {:allow_direct_mutation => allow_direct_mutation}
           end
-          <self>.class().decorator().foreign_prop_get(<self>, :foreign, foreign, {}, opts)
+          ::T.unsafe(<self>.class()).decorator().foreign_prop_get(<self>, :foreign, foreign, {}, opts)
         end
       end
     end.call(<self>, <self>.lambda() do ||
@@ -711,7 +711,7 @@ class <emptyTree><<C <root>>> < (::<todo sym>)
           else
             {:allow_direct_mutation => allow_direct_mutation}
           end
-          <self>.class().decorator().foreign_prop_get(<self>, :foreign_lazy, foreign, {}, opts)
+          ::T.unsafe(<self>.class()).decorator().foreign_prop_get(<self>, :foreign_lazy, foreign, {}, opts)
         end
       end
     end.call(<self>, <self>.lambda() do ||
@@ -751,7 +751,7 @@ class <emptyTree><<C <root>>> < (::<todo sym>)
           else
             {:allow_direct_mutation => allow_direct_mutation}
           end
-          <self>.class().decorator().foreign_prop_get(<self>, :foreign_proc, foreign, {}, opts)
+          ::T.unsafe(<self>.class()).decorator().foreign_prop_get(<self>, :foreign_proc, foreign, {}, opts)
         end
       end
     end.call(<self>, <self>.lambda() do ||
@@ -791,7 +791,7 @@ class <emptyTree><<C <root>>> < (::<todo sym>)
           else
             {:allow_direct_mutation => allow_direct_mutation}
           end
-          <self>.class().decorator().foreign_prop_get(<self>, :foreign_invalid, foreign, {}, opts)
+          ::T.unsafe(<self>.class()).decorator().foreign_prop_get(<self>, :foreign_invalid, foreign, {}, opts)
         end
       end
     end.call(<self>, <self>.lambda() do ||

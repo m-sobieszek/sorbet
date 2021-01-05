@@ -6520,13 +6520,24 @@ ClassDef{
                     expr = Send{
                       recv = Send{
                         recv = Send{
-                          recv = Local{
-                            localVariable = <U <self>>
+                          recv = ConstantLit{
+                            orig = nullptr
+                            symbol = (module ::T)
                           }
-                          fun = <U class>
+                          fun = <U unsafe>
                           block = nullptr
-                          pos_args = 0
+                          pos_args = 1
                           args = [
+                            Send{
+                              recv = Local{
+                                localVariable = <U <self>>
+                              }
+                              fun = <U class>
+                              block = nullptr
+                              pos_args = 0
+                              args = [
+                              ]
+                            }
                           ]
                         }
                         fun = <U decorator>
@@ -6859,13 +6870,24 @@ ClassDef{
                     expr = Send{
                       recv = Send{
                         recv = Send{
-                          recv = Local{
-                            localVariable = <U <self>>
+                          recv = ConstantLit{
+                            orig = nullptr
+                            symbol = (module ::T)
                           }
-                          fun = <U class>
+                          fun = <U unsafe>
                           block = nullptr
-                          pos_args = 0
+                          pos_args = 1
                           args = [
+                            Send{
+                              recv = Local{
+                                localVariable = <U <self>>
+                              }
+                              fun = <U class>
+                              block = nullptr
+                              pos_args = 0
+                              args = [
+                              ]
+                            }
                           ]
                         }
                         fun = <U decorator>
@@ -7197,13 +7219,24 @@ ClassDef{
                     expr = Send{
                       recv = Send{
                         recv = Send{
-                          recv = Local{
-                            localVariable = <U <self>>
+                          recv = ConstantLit{
+                            orig = nullptr
+                            symbol = (module ::T)
                           }
-                          fun = <U class>
+                          fun = <U unsafe>
                           block = nullptr
-                          pos_args = 0
+                          pos_args = 1
                           args = [
+                            Send{
+                              recv = Local{
+                                localVariable = <U <self>>
+                              }
+                              fun = <U class>
+                              block = nullptr
+                              pos_args = 0
+                              args = [
+                              ]
+                            }
                           ]
                         }
                         fun = <U decorator>
@@ -7532,13 +7565,24 @@ ClassDef{
                     expr = Send{
                       recv = Send{
                         recv = Send{
-                          recv = Local{
-                            localVariable = <U <self>>
+                          recv = ConstantLit{
+                            orig = nullptr
+                            symbol = (module ::T)
                           }
-                          fun = <U class>
+                          fun = <U unsafe>
                           block = nullptr
-                          pos_args = 0
+                          pos_args = 1
                           args = [
+                            Send{
+                              recv = Local{
+                                localVariable = <U <self>>
+                              }
+                              fun = <U class>
+                              block = nullptr
+                              pos_args = 0
+                              args = [
+                              ]
+                            }
                           ]
                         }
                         fun = <U decorator>
