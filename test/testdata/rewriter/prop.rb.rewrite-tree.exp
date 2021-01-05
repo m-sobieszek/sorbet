@@ -332,7 +332,7 @@ class <emptyTree><<C <root>>> < (::<todo sym>)
     end
 
     ::Sorbet::Private::Static.sig(::T::Sig::WithoutRuntime) do ||
-      <self>.params(:opts, ::T.untyped()).returns(::T.nilable(<emptyTree>::<C ForeignClass>))
+      <self>.params(:opts, ::T.untyped()).returns(::T.nilable(<emptyTree>::<C String>))
     end
 
     def foreign_<<todo method>>(*opts:, &<blk>)
@@ -340,7 +340,7 @@ class <emptyTree><<C <root>>> < (::<todo sym>)
     end
 
     ::Sorbet::Private::Static.sig(::T::Sig::WithoutRuntime) do ||
-      <self>.params(:allow_direct_mutation, ::T.nilable(::T::<C Boolean>)).returns(<emptyTree>::<C ForeignClass>)
+      <self>.params(:allow_direct_mutation, ::T.nilable(::T::<C Boolean>)).returns(<emptyTree>::<C String>)
     end
 
     def foreign_!<<todo method>>(allow_direct_mutation: = nil, &<blk>)
@@ -382,7 +382,7 @@ class <emptyTree><<C <root>>> < (::<todo sym>)
     end
 
     ::Sorbet::Private::Static.sig(::T::Sig::WithoutRuntime) do ||
-      <self>.params(:opts, ::T.untyped()).returns(::T.nilable(<emptyTree>::<C ForeignClass>))
+      <self>.params(:opts, ::T.untyped()).returns(::T.nilable(<emptyTree>::<C String>))
     end
 
     def foreign_lazy_<<todo method>>(*opts:, &<blk>)
@@ -390,7 +390,7 @@ class <emptyTree><<C <root>>> < (::<todo sym>)
     end
 
     ::Sorbet::Private::Static.sig(::T::Sig::WithoutRuntime) do ||
-      <self>.params(:allow_direct_mutation, ::T.nilable(::T::<C Boolean>)).returns(<emptyTree>::<C ForeignClass>)
+      <self>.params(:allow_direct_mutation, ::T.nilable(::T::<C Boolean>)).returns(<emptyTree>::<C String>)
     end
 
     def foreign_lazy_!<<todo method>>(allow_direct_mutation: = nil, &<blk>)
@@ -432,7 +432,7 @@ class <emptyTree><<C <root>>> < (::<todo sym>)
     end
 
     ::Sorbet::Private::Static.sig(::T::Sig::WithoutRuntime) do ||
-      <self>.params(:opts, ::T.untyped()).returns(::T.nilable(<emptyTree>::<C ForeignClass>))
+      <self>.params(:opts, ::T.untyped()).returns(::T.nilable(<emptyTree>::<C String>))
     end
 
     def foreign_proc_<<todo method>>(*opts:, &<blk>)
@@ -440,7 +440,7 @@ class <emptyTree><<C <root>>> < (::<todo sym>)
     end
 
     ::Sorbet::Private::Static.sig(::T::Sig::WithoutRuntime) do ||
-      <self>.params(:allow_direct_mutation, ::T.nilable(::T::<C Boolean>)).returns(<emptyTree>::<C ForeignClass>)
+      <self>.params(:allow_direct_mutation, ::T.nilable(::T::<C Boolean>)).returns(<emptyTree>::<C String>)
     end
 
     def foreign_proc_!<<todo method>>(allow_direct_mutation: = nil, &<blk>)
@@ -482,7 +482,7 @@ class <emptyTree><<C <root>>> < (::<todo sym>)
     end
 
     ::Sorbet::Private::Static.sig(::T::Sig::WithoutRuntime) do ||
-      <self>.params(:opts, ::T.untyped()).returns(::T.untyped())
+      <self>.params(:opts, ::T.untyped()).returns(::T.nilable(<emptyTree>::<C String>))
     end
 
     def foreign_invalid_<<todo method>>(*opts:, &<blk>)
@@ -490,7 +490,7 @@ class <emptyTree><<C <root>>> < (::<todo sym>)
     end
 
     ::Sorbet::Private::Static.sig(::T::Sig::WithoutRuntime) do ||
-      <self>.params(:allow_direct_mutation, ::T.nilable(::T::<C Boolean>)).returns(::T.untyped())
+      <self>.params(:allow_direct_mutation, ::T.nilable(::T::<C Boolean>)).returns(<emptyTree>::<C String>)
     end
 
     def foreign_invalid_!<<todo method>>(allow_direct_mutation: = nil, &<blk>)

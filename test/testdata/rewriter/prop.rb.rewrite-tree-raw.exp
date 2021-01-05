@@ -3567,7 +3567,7 @@ ClassDef{
                   args = [
                     UnresolvedConstantLit{
                       scope = EmptyTree
-                      cnst = <C <U ForeignClass>>
+                      cnst = <C <U String>>
                     }
                   ]
                 }
@@ -3663,7 +3663,7 @@ ClassDef{
               args = [
                 UnresolvedConstantLit{
                   scope = EmptyTree
-                  cnst = <C <U ForeignClass>>
+                  cnst = <C <U String>>
                 }
               ]
             }
@@ -4009,7 +4009,7 @@ ClassDef{
                   args = [
                     UnresolvedConstantLit{
                       scope = EmptyTree
-                      cnst = <C <U ForeignClass>>
+                      cnst = <C <U String>>
                     }
                   ]
                 }
@@ -4105,7 +4105,7 @@ ClassDef{
               args = [
                 UnresolvedConstantLit{
                   scope = EmptyTree
-                  cnst = <C <U ForeignClass>>
+                  cnst = <C <U String>>
                 }
               ]
             }
@@ -4451,7 +4451,7 @@ ClassDef{
                   args = [
                     UnresolvedConstantLit{
                       scope = EmptyTree
-                      cnst = <C <U ForeignClass>>
+                      cnst = <C <U String>>
                     }
                   ]
                 }
@@ -4547,7 +4547,7 @@ ClassDef{
               args = [
                 UnresolvedConstantLit{
                   scope = EmptyTree
-                  cnst = <C <U ForeignClass>>
+                  cnst = <C <U String>>
                 }
               ]
             }
@@ -4887,10 +4887,14 @@ ClassDef{
                     orig = nullptr
                     symbol = (module ::T)
                   }
-                  fun = <U untyped>
+                  fun = <U nilable>
                   block = nullptr
-                  pos_args = 0
+                  pos_args = 1
                   args = [
+                    UnresolvedConstantLit{
+                      scope = EmptyTree
+                      cnst = <C <U String>>
+                    }
                   ]
                 }
               ]
@@ -4983,16 +4987,9 @@ ClassDef{
               block = nullptr
               pos_args = 1
               args = [
-                Send{
-                  recv = ConstantLit{
-                    orig = nullptr
-                    symbol = (module ::T)
-                  }
-                  fun = <U untyped>
-                  block = nullptr
-                  pos_args = 0
-                  args = [
-                  ]
+                UnresolvedConstantLit{
+                  scope = EmptyTree
+                  cnst = <C <U String>>
                 }
               ]
             }
